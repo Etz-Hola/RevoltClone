@@ -1,0 +1,296 @@
+ @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700&family=Inter:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Syne:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Syne:wght@400;500;600;700&display=swap');
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    /* outline: none; */
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+}
+
+html{
+    font-size: 65.2%;
+    overflow-x: hidden;
+}
+ 
+ 
+body {
+    background-color: beige;
+    font-family: 'Sofia Sans', sans-serif;
+    
+}
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 8rem;
+    z-index: 1;
+    box-shadow: 0, 1.2rem, 3.2rem rgba(0, 0, 0, 0.30);
+    background-color: rgba(255, 255, 255, 0.95)
+} 
+
+.header {
+    background-color: #E8EDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+
+.headerText {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.mainNaveList {
+    color: #1c1c1c;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 3.2rem;
+    font-size: 2px;
+    
+}
+
+
+ .mainNaveLink:link, .mainNaveLink:visited{
+    text-decoration: none;
+    font-size: 20px;
+    color: #1c1c1c;
+    width: 100vw;
+    
+}
+ .mainNaveLink:hover, .mainNaveLink:active{
+    color: #6fcade;
+    text-decoration: underline;
+}
+
+
+.navBtn {
+    display: flex;
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.btn, .btn:link, .btn:visited {
+    width: 160px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+    border: none;
+}
+
+.loginBtn:link, .loginBtn:visited {
+    background-color: #9fb7b9;
+    color: #f6f6f6;
+}
+
+.loginBtn:hover, .loginBtn:active {
+    background-color: #b7ced1;
+    color: #E8EDED;
+}
+
+.signupBtn:link, .signupBtn:visited {
+    background-color: inherit;
+    border: 1px solid #1c1c1c;
+}
+
+.signupBtn:hover, .signupBtn:active {
+    background-color: #f5f2ec;
+}
+
+.heroSection{
+    background-image: url(/img/hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.heroContainer{
+    height: 519px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Syne', sans-serif;
+} 
+
+.heroText, .heroSubTitle{
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+    color: #1C1C1C;
+}
+
+.heroTitle{
+    margin-bottom: 2rem;
+    font-size: 115px;
+}
+
+.heroBtn{
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+.heroBtn .btn{
+    text-decoration: none;
+    color: #F6F6F6;
+    border-radius: 10px;
+    background: #9fb7b9;
+    color: #f6f6f6;
+    width: 346px;
+    height: 65px;
+    padding: 10px;
+}
+
+.aboutSection{
+    padding: 0 4.8rem;
+    margin-bottom: 141px;
+    width: 100vw;
+
+}
+
+.aboutSection > .gridCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 178px;
+    margin-top: 10rem;
+    background-color: #6fcade;
+    border-radius: 20px;
+}
+.aboutSection .addWallet{
+    padding: 135px 61px 62px 80px;
+}
+
+
+.aboutSection .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.aboutSection .gridItem button{
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #F6F6F6;
+    width: 411px;
+    height: 65px;
+    margin-top: 29px;
+    border-radius: 10px;
+}
+
+
+
+
+.aboutSection .gridItemText{
+    align-items: flex-start;
+    color: #1c1c1c;
+}
+
+.aboutSection .gridItemText h3 {
+    font-family: "syne", "sans-serif";
+    font-size: 32px;
+    font-weight: 700;
+    width: 468px;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.aboutSection .gridItemText p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    width: 574px;
+    margin-bottom: 152px;
+}
+
+.aboutSection .learnMore{
+    padding: 22px 61px 41px 83px;
+}
+
+.aboutSection .learnMore .gridItemText{
+    margin-top: 135px;
+}
+
+.aboutSection .gridItemText .learnMoreBtn{
+    margin-left: 151px;
+    width: 236px;
+}
+
+
+.footerSection{
+    background-color: #1c1c1c;
+    background-image: url(./img/backgrand.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    width: 100vw;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "syne", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-column-gap: 89px;
+    padding: 152px 831px 164px 100px;
+}
+
+
+.footerSection .gridItem{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footerSection h4 {
+    font-family: "roboto", sans-serif;
+    margin-bottom: 55px;
+}
+
+.footerSection .footerLink{
+    width: 134ps;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "inter" sans-serif;
+}
