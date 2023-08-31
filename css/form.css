@@ -1,0 +1,111 @@
+/* FORM CON */
+head {
+  padding: 42px 98px;
+}
+
+.formSect {
+  background-color: #f2feff;
+}
+
+.formCon .formHeading {
+  color: #1c1c1c;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+
+.formCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+form label {
+  display: block;
+  color: #1c1c1c;
+  font-family: Sofia Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #1c1c1cb3;
+  opacity: 0.6;
+  background: #fff;
+  width: 314px;
+  height: 42px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.formTag {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.btn--form {
+  display: flex;
+  width: 564px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #0539ff;
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button :nth-child(2) {
+  display: none;
+}
+
+button p {
+  color: #ffffffcc;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+#reg {
+  background-color: inherit;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+  .formTag {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 254px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .formLogo {
+    size: 2px;
+  }
+
+  .formCon h3 {
+    font-size: 2px;
+    font-weight: 10;
+  }
+
+  .formTag {
+    font-size: 8px;
+  }
+}
