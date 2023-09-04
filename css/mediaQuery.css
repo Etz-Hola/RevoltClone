@@ -107,6 +107,7 @@
   .aboutSection .gridCard .atm2 {
     display: none;
   }
+
   .aboutSection .gridCard .atmTablet {
     display: inline;
   }
@@ -176,6 +177,7 @@
 
 /* SMALL TABLETS */
 @media (max-width: 768px) {
+  /* HEADER SECTION */
   .logo {
     font-size: 16px;
   }
@@ -191,6 +193,12 @@
     height: 47px;
   }
 
+    /* HERO SECTION */
+    .heroSection {
+      padding-bottom: 44px;
+    }
+
+  /* HERO SECTION */
   .aboutSection {
     margin: 54px 0;
   }
@@ -205,6 +213,10 @@
     margin-top: 42px;
   }
 
+  .aboutSection .learnMore .gridItemText {
+    place-items: center;
+  }
+
   .aboutSection .gridCard p,
   .aboutSection .gridCard h3 {
     width: 100%;
@@ -214,10 +226,7 @@
     width: auto;
   }
 
-  .heroSection {
-    padding-bottom: 44px;
-  }
-
+  /* FOOTER SECTION */
   .footerSection {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -227,6 +236,7 @@
 
 /* Mobile Phones */
 @media (max-width: 540px) {
+    /* HEADER SECTION */
   .mainNav {
     width: 100%;
   }
@@ -239,14 +249,16 @@
     display: none;
   }
 
+    /* FOOTER SEC TION */
   .footerSection {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+
 /* SMALL PHONE */
 @media (max-width: 480px) {
-
+  /* HEADER SECTION */
   .header {
     height: 81px;
   }
@@ -255,6 +267,7 @@
     background-image: url(/img/phoneBg.svg);
   }
 
+    /* ABOUT SECTION */
   .aboutSection {
     padding: 0;
     margin: 0;
@@ -276,6 +289,10 @@
 
   .aboutSection .learnMore {
     margin-top: 15px;
+  }
+
+  .aboutSection .learnMore .gridItemText {
+    place-items: start;
   }
 
   .aboutSection .learnMoreCard {
@@ -305,9 +322,18 @@
     margin-top: 0;
   }
 
+  button :nth-child(2) {
+    display: inline-block;
+  }
+
+  button :nth-child(1) {
+    display: none;
+  }
 }
 
+/* SMALL IPHONES  */
 @media (max-width: 375px) {
+   /* HEADER SECTION */
   .header {
     padding: 14px 12px;
 
@@ -319,9 +345,10 @@
     height: 37;
   }
 
+    /* ABOUT SECTION */
   .aboutSection .gridCard {
     margin-top: 14px;
-    padding: 0 22px 43px;
+    padding: 0 12px 33px;
   }
 
   .aboutSection .gridItem button{
@@ -333,13 +360,31 @@
 
 }
 
+/* GALAXY FOLDS AND SMALLEST SCREEN  */
 @media (max-width: 280px) {
+  /* ABOUT SECTION */
   .aboutSection .gridCard .aboutImg {
     width: 247px;
     height: 149px;
   }
+
   .aboutSection .gridItem .atmTablet {
     width: 271px;
     height: 384px;
+  }
+
+   /* FOOTER SECTION */
+   .footerSection {
+    font-size: 16px;
+    padding: 14px 12px;
+    gap: 8px;
+  }
+
+  .footerSection h4 {
+    margin-bottom: 25px;
+  }
+
+  .footerSection .footerLink {
+    width: auto;
   }
 }

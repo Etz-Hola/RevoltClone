@@ -151,7 +151,7 @@
 .loginBtn:hover,
 .loginBtn:active {
   background-color: #b7ced1;
-  color: #e8eded;
+  color: #1c1c1c;
 }
 
 .signupBtn:link,
@@ -299,6 +299,10 @@
   height: 65px;
   margin-top: 29px;
   border-radius: 10px;
+}
+
+button :nth-child(2) {
+  display: none;
 }
 
 .aboutSection .gridItemText h3 {
